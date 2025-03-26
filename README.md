@@ -5,9 +5,12 @@ Este repositorio forma parte de la materia **Ingeniería de Software II** en la 
 Contiene scripts en Python, documentación y otros archivos relacionados con la asignatura.
 
 ## Tecnologias Usadas
- -Python
- -Git
- -github
+
+#-Python
+
+#-Git
+ 
+#-github
 
 ### Estructura del Repositorio  
 El proyecto está organizado en las siguientes carpetas:
