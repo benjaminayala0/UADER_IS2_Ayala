@@ -1,0 +1,15 @@
+Situación 
+Desarrollo de una GUI multiplataforma (Windows, Mac, Linux). Supongamos que estás desarrollando una aplicación que necesita comportarse visualmente de manera coherente en diferentes sistemas operativos, y cada uno tiene su estilo de botones, ventanas y cuadros de diálogo. Podés crear:
+Una fábrica abstracta GUIFactory con métodos como:
+-create_button()
+-create_window()
+Luego, fábricas concretas como:
+-WindowsFactory, que devuelve botones, ventanas, etc., estilo Windows.
+-MacFactory, que devuelve elementos estilo macOS.
+-LinuxFactory, con widgets compatibles con entornos como GNOME o KDE.
+Esto te permite, desde el cliente, cambiar el "tema" de la aplicación simplemente eligiendo una fábrica distinta sin cambiar el resto del código.
+
+ Ventajas en esa situación
+-Permite compatibilidad entre componentes (por ejemplo, botón y ventana del mismo sistema).
+-Facilita el intercambio de familias de objetos (botón + ventana + menú de Mac vs de Windows).
+-Promueve el principio de inversión de dependencias (el cliente depende de abstracciones, no de implementaciones).
